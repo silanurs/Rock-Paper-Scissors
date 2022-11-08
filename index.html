@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel ="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pirata+One">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/578dda704c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="img"></div>
+    <header>
+        <h1> Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <article id="gameBoard">
+        
+        
+        <article id="container">
+            
+           
+            <section id="choices">
+                <button id="ROCK" class = "ROCK"><i class="fa-solid fa-hand-fist" style="font-size: 80px;color:#1c0e43;"></i></button>
+                <button id="PAPER" class = "PAPER"><i class="fa-regular fa-hand" style="font-size:80px;color:#1c0e43"></i></button>
+                <button id="SCISSORS" class = "SCISSORS"><i class="fa-regular fa-hand-peace" style="font-size:80px;color:#1c0e43"></i></button>
+    
+            </section>
+
+        </article>   
+        <article id="scoreMessage">
+            <div id="selections">
+            <section class="userchoice"> 
+                USER: <div id="userChoice"></div>
+    
+            </section>
+            <section class="computerchoice">
+                Computer: <div id="computerchoice"></div> 
+    
+            </section>
+            </div>
+            <section id = "scoreInfo">
+                First to score 5 wins the game!
+            </section>
+            <div id="scores">
+            <section> 
+                User: <div id="userScore"> 0</div>
+            </section>
+            
+            <section>
+                Computer: <div id="computerScore">0</div>
+            </section>
+            </div>
+
+        </article>
+            
+        </article>
+            <article class="endgamePart" id="endgamePart">
+                <p id="endgameMsg"></p>
+                <button id="playAgainbtn">Play Again</button>
+            </article>
+            <div class="overlay" id="overlay"></div>
+    
+        </article>
+    
+               
+        
+
+       
+    </main>
+    <footer id="footer">
+        <p>Copyright &copy; <script>
+            document.write(new Date().getFullYear())
+          </script> Silanurs</p>
+          <a href="https://github.com/silanurs" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+    </footer>
+  <script src = "script.js"></script>  
+</body>
+</html>

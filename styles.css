@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pirata One", "sans-serif";
+    font-weight: "bold";
+    font-size: 50px;
+    color: #eef4f8 ;
+    
+}
+body, html {
+    height: 100%
+}
+#img {
+    background: url(images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9;
+    
+}
+header {
+    background-color: #1c0e43;
+    text-align: center;
+}
+h1 {
+    padding-top: 10px;
+}
+#gameBoard {
+    width: 60vw;
+    margin-left: 25%;
+    margin-top: 50px;
+    display:inline-grid;
+    grid-template-columns: 100px 600px;
+    column-gap: 300px;
+}
+#selections {
+
+   display:inline-grid;
+   grid-template-columns: 100px 100px;
+   column-gap: 200px;
+
+}
+#scores {
+    display: inline-grid;
+    grid-template-columns: 100px 100px;
+    column-gap: 200px;
+}
+
+
+#ROCK, #PAPER, #SCISSORS {
+    display: block;
+   margin-bottom: 20px; 
+    
+    background-color: #eef4f8;
+    width: 100px;
+    height: 140px;
+    border-radius: 100px;
+    
+    
+    box-shadow: 10px 10px 25px #eef4f8;
+    transition: width 0.7s, height 0.7s, linear;
+
+}
+
+
+
+#ROCK:hover, #SCISSORS:hover, #PAPER:hover {
+    width: 120px;
+    height: 160px;
+
+}
+#scoreMessage {
+    background-color: #1c0e43;
+    height: 550px;
+    padding-top: 70px;
+    
+    
+    
+    
+    
+}
+#scoreInfo {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.endgamePart {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+  }
+  
+  .endgamePart.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  #endgameMsg {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  #playAgainbtn {
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color:#eef4f8;
+    background-color: #1c0e43;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  @media screen and (max-width: 550px) {
+    * {
+        font-size: 20px;
+    }
+    #gameBoard{
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 50px;
+        display:inline-grid;
+        grid-template-columns: 40px 150px;
+        column-gap: 80px;
+    }
+    #ROCK, #PAPER, #SCISSORS {
+        display: block;
+       margin-bottom: 20px; 
+        
+        background-color: #eef4f8;
+        width: 80px;
+        height: 100px;
+        border-radius: 60px;
+        font-size: 16px;
+        
+        box-shadow: 8px 8px 15px #eef4f8;
+        transition: width 0.7s, height 0.7s, linear;
+    
+    }
+    
+    
+    
+    #ROCK:hover, #SCISSORS:hover, #PAPER:hover {
+        width: 85px;
+        height: 115px;
+    
+    }
+    #scoreMessage {
+        background-color: #1c0e43;
+        height: 300px;
+        padding-top: 70px;
+        
+        
+        
+        
+        
+    }
+    #scoreInfo {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #selections {
+
+        display:inline-grid;
+        grid-template-columns: 60px 80px;
+        column-gap: 10px;
+     
+     }
+     #scores {
+         display: inline-grid;
+         grid-template-columns: 50px 50px;
+         column-gap: 10px;
+     }
+  }
